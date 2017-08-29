@@ -1,0 +1,357 @@
+@main-color: #a2cd0f;
+@body: 100%;
+@color-grey: rgba(0,0,0,0.2);
+@color-dark-link: rgba(0,0,0,0.59);
+@color-light-link: white;
+@main-font1: Sans;
+@main-font2: Sans;
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: @body;
+  margin: 0 auto auto;
+}
+
+.conteiner {
+  width: 1200px!important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  text-align: justify;
+}
+
+.conteiner::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+header {
+  position: relative;
+  border-bottom: 1px solid @main-color;
+
+  .openmenu {
+    height: 25px;
+    width: 25px;
+    border: 1px solid @color-grey;
+    position: absolute;
+    right: 0;
+    left: auto;
+    display: none;
+  }
+  /*topmenu*/
+  .topmenu {
+    background-color: @main-color;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    border-bottom: 1px solid @color-grey;
+    height: 30px;
+    position: relative;
+
+    a {
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 3px;
+      margin: 0;
+    }
+
+    .left {
+      width: 30%;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+
+      ul {
+        margin: auto;
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .right {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+
+      ul {
+        padding: 0;
+        margin: 0 0 0 auto;
+      }
+
+      li {
+        padding-left: 15px;
+
+        a {
+          color: @color-light-link;
+          text-decoration: none;
+          font-size: 14px;
+          font-family: @main-font1;
+        }
+      }
+    }
+  }
+
+  .topmenu:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid @main-color;
+    margin: 0;
+  }
+  /*bottommenu*/
+  .bottommenu {
+    text-align: justify;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    @height-menu: 75px;
+    font-family: @main-font1;
+    /*<img src="logo.jpeg" alt="" height="100px">*/
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      width: 150px;
+    }
+
+    .phone {
+      display: inline-block;
+      width: 200px;
+      vertical-align: middle;
+      font-size: 25px;
+      line-height: 25px;
+      letter-spacing: 0;
+
+      span {
+        line-height: 25px;
+        letter-spacing: 0.1px;
+        font-size: 11px;
+      }
+    }
+
+    .call {
+      vertical-align: middle;
+      display: inline-block;
+      width: 200px;
+
+      .button {
+        background-color: @main-color;
+        border-radius: 10px;
+        border: 1px solid @color-grey;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        box-shadow: 1px 1px 1px 0.5px @color-grey;
+
+        a {
+          text-decoration: none;
+          color: @color-light-link;
+        }
+      }
+    }
+
+    .login {
+      vertical-align: middle;
+      display: inline-block;
+      width: 200px;
+      font-family: @main-font1;
+      text-align: center;
+      color: @color-grey;
+
+      a {
+        color: @color-dark-link;
+        text-decoration: none;
+      }
+    }
+
+    .cart {
+      display: inline-block;
+      width: 150px;
+      vertical-align: middle;
+
+      .logo {
+        display: inline-block;
+        width: 50px;
+      }
+
+      .info {
+        font-family: @main-font1;
+        font-weight: 100;
+        vertical-align: middle;
+        display: inline-block;
+        text-align: right;
+        font-size: 14px;
+
+        .cost {
+          font-size: 16px;
+
+          .currency {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .cart::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  .bottommenu:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+
+  .mainmenu {
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+
+    .list {
+      display: inline-block;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+
+        li {
+          display: inline-block;
+          padding-right: 15px;
+
+          a {
+            color: @color-dark-link;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: @main-font1;
+          }
+        }
+      }
+    }
+
+    .search {
+      display: inline-block;
+    }
+
+    .search {
+      text-align: right;
+
+      form {
+        border-radius: 5px;
+        border: 1px solid @color-grey;
+        margin: 0;
+      }
+
+      input[type="text"] {
+        border: none;
+        height: 40px;
+        margin: 0;
+        width: 250px;
+        padding-left: 15px;
+      }
+
+      input[type="submit"] {
+        border-radius: 5px;
+        background-color: white;
+        border: none;
+        border-left: 1px solid @color-grey;
+        height: 40px;
+        margin: 0;
+      }
+
+      input[type="submit"]:active {
+        background-color: @main-color;
+      }
+    }
+  }
+}
+
+.mainmenu:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.page {
+  img {
+    height: 500px;
+  }
+
+  .slider {
+    width: 100%;
+    height: 500px;
+
+    .display {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      .slide {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        z-index: 40;
+        .image {
+          height: 500px;
+          width: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position-x: 50%;
+          background-position-y: 50%;
+        }
+        .text{
+          position: absolute;
+          top:0px;
+          left: 100px;
+          height: 100%;
+          width: 500px;
+          color:white;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-family: @main-font1;
+
+
+          h2{
+              vertical-align: middle;
+            padding: 45px;
+            font-size: 45px;
+          }
+          p{
+            padding: 0px 45px ;
+            font-size: 20px;
+              vertical-align: middle;
+          }
+        }
+      }
+      .slide.active{
+        z-index: 45;
+      }
+    }
+    .controls{
+      position: absolute;
+      z-index: 50;
+    }
+  }
+}

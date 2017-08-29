@@ -1,0 +1,96 @@
+@main-color: #a2cd0f;
+@body: 100%;
+@color-grey: rgba(0,0,0,0.2);
+@color-dark-link: rgba(0,0,0,0.59);
+@color-light-link: white;
+@main-font1: Sans;
+@main-font2: Sans;
+
+@media only screen and (max-width:1200px) {
+  body {
+    width: 100%;
+  }
+
+  .conteiner {
+    width: 100%!important;
+  }
+
+  .topmenu {
+    .right {
+      ul {
+        li:last-child {
+          padding-right: 10px !important;
+        }
+      }
+    }
+  }
+
+  header {
+    .bottommenu {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      .logo {
+        width: 15%;
+        padding-left: 10px;
+      }
+
+      .phone {
+        width: 150px;
+        font-size: 1em;
+      }
+
+      .call {
+        width: 150px;
+        font-size: 11px;
+      }
+
+      .login {
+        width: 150px;
+        font-size: 0.9em;
+      }
+
+      .cart {
+        width: 100px;
+        font-size: 0.3em!important;
+        text-align: center;
+      }
+    }
+
+    .mainmenu {
+      .conteiner,
+      .list,
+      .search {
+        transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+        -webkit-transform: scaleY(-1);
+      }
+
+      .list {
+        margin:10px;
+        ul{
+            text-align: center;
+        }
+      }
+
+      .search {
+        width: 100%;
+
+        form {
+          margin-left: 10px !important;
+          margin-right: 10px !important;
+        }
+
+        input[type="text"] {
+          width: 90%;
+          margin-left: 0;
+          margin-right: auto;
+        }
+
+        input[type="submit"] {
+          width: 9%;
+        }
+      }
+    }
+  }
+}
