@@ -5,7 +5,6 @@
 @color-light-link: white;
 @main-font1: Sans;
 @main-font2: Sans;
-
 @media only screen and (max-width:1200px) {
   body {
     width: 100%;
@@ -16,6 +15,12 @@
   }
 
   .topmenu {
+    .left {
+      ul {
+        padding-left: 50px !important;
+      }
+    }
+
     .right {
       ul {
         li:last-child {
@@ -67,9 +72,10 @@
       }
 
       .list {
-        margin:10px;
-        ul{
-            text-align: center;
+        margin: 10px;
+
+        ul {
+          text-align: center;
         }
       }
 
@@ -90,6 +96,67 @@
         input[type="submit"] {
           width: 9%;
         }
+      }
+    }
+  }
+
+  .page {
+    .section {
+      .tabs {
+        .list {
+          width: 100%;
+
+          .tab {
+            text-align: center;
+
+            .item {
+              margin: 30px 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .section.anketa {
+      height: inherit!important;
+
+      .cycle {
+        width: 100%!important;
+        height: 200px!important;
+        display: block!important;
+
+        .text {
+          margin: auto;
+          left: 0;
+        }
+      }
+
+      .descr {
+        text-align: center;
+        width: 50%!important;
+        height: inherit!important;
+        display: block!important;
+        line-height: 30px;
+        margin: auto;
+        font-weight: 600;
+        margin-bottom: 50px;
+      }
+
+      .button {
+        width: 70%!important;
+        height: 50px!important;
+        display: block!important;
+        margin: auto auto 30px;
+      }
+    }
+  }
+
+  footer {
+    .infoblock {
+      margin: 0 10px;
+
+      h4 {
+        font-size: 17px;
       }
     }
   }

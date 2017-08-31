@@ -33,9 +33,11 @@ i=a;
 
     slides.each(function(index, el) {
       $(el).removeClass('active');
+      $(el).css('z-index', 30);
     });
     marks.each(function(index, el) {
-      $(el).html('Not active');
+     $(el).removeClass('active');
+
     });
 
 
@@ -48,10 +50,11 @@ i=a;
     }
     ActiveSlide = i;
     console.log(i);
-    $(marks).eq(i).html('active');
+
+  $(marks).eq(i).addClass('active');
     $(slides).eq(i).css('left', 0);
-    $(slides).eq(i).css('z-index', 40);
-    $(slides).eq(prev).css('z-index', 45);
+    $(slides).eq(i).css('z-index', 50);
+    $(slides).eq(prev).css('z-index',59);
 switch (direction) {
   case 'R':
 
@@ -69,19 +72,20 @@ switch (direction) {
 
 }
 
-
+    //$(slides).eq(i).css('z-index', 50);
     setTimeout(function() {
       console.log(i + direction);
       $(slides).eq(i).addClass('active');
       canMove=true;
     }, 1000);
+    /*$(slides).eq(prev).css('z-index', 50);*/
 
 }
   }
 
 
   /*first slide is active*/
-  setSlide(2, 'L');
+  setSlide(CountSlides-1, 'L');
 
 
 

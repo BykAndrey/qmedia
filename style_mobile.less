@@ -15,16 +15,18 @@
       position: fixed;
       left: 0;
       display: block!important;
-      z-index: 99;
+      z-index: 70;
       top: 0;
     }
 
     .topmenu {
       display: none;
-      position: absolute!important;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 65;
       height: auto!important;
       width: 100%!important;
-      z-index: 80;
 
       .left {
         height: auto!important;
@@ -38,28 +40,35 @@
         li {
           display: block;
           text-align: right;
-          padding-right: 10px!important;
-          a{
+          padding-right: 10px !important;
+
+          a {
             font-size: 15px!important;
           }
         }
-        li:last-child{
 
-
-        }
+        li:last-child {}
       }
     }
 
     .bottommenu {
       margin-top: 0;
       background-color: @main-color;
+      max-height: 100px;
+      position: relative;
 
       .logo {
-        width: 27%!important;
-        padding-left: 40px !important;
+        max-width: 27%!important;
+        padding: 0 0 0 40px !important;
+        max-height: 70px;
+        height: 50px;
 
         img {
-          max-width: 100px;
+          top: 0;
+          left: 0;
+          height: 100%;
+          bottom: auto;
+          z-index: 50;
         }
       }
 
@@ -82,12 +91,15 @@
       }
 
       .login {
-        width: 60%!important;
-        font-size: 0.7em!important;
-        text-align: right!important;
-        a{
+        width: 50% !important;
+        font-size: 0.7em !important;
+        text-align: right !important;
+        max-height: 70px;
+        padding: 10px;
+
+        a {
           color: @color-light-link;
-            font-weight:600!important;
+          font-weight: 600!important;
         }
       }
 
@@ -96,8 +108,10 @@
         display: block!important;
         width: 100%!important;
         background-color: @main-color;
-        .cost{
-          font-weight:700!important;
+        max-height: 70px;
+
+        .cost {
+          font-weight: 700!important;
         }
       }
     }
@@ -117,6 +131,68 @@
           width: 23%;
         }
       }
+    }
+  }
+
+  .page {
+    .section {
+      .tabs {
+        ul {
+          text-align: center;
+          border-bottom: 1px solid @color-grey;
+          padding: 0;
+
+          li {
+            padding: 5px 15px;
+            margin: 0;
+
+            h2 {
+              font-size: 11px!important;
+            }
+          }
+        }
+      }
+    }
+
+    .section.anketa {
+      .descr {
+        width: 80%!important;
+      }
+
+      .getSkidka {
+        .danke {
+          width: 95%!important;
+        }
+      }
+    }
+  }
+
+  footer {
+    .infoblock {
+      margin: 0 10px;
+      width: 90%!important;
+      text-align: center!important;
+      border-top: 1px solid @main-color;
+
+      ul {
+        li {
+          padding: 7px 0;
+        }
+      }
+
+      .logo {
+        width: 100%!important;
+        text-align: center;
+
+        img {
+          width: 150px;
+          max-height: 60px;
+        }
+      }
+    }
+
+    .infoblock:last-child {
+      margin-bottom: 25px;
     }
   }
 }

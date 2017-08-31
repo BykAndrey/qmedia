@@ -6,6 +6,17 @@
 @main-font1: Sans;
 @main-font2: Sans;
 @media only screen and (max-width:765px) {
+  footer {
+    .infoblock {
+      margin: 0 10px;
+      width: 45%!important;
+    }
+  }
+
+  .footbot {
+    font-size: 9px!important;
+  }
+
   body {
     width: 100%;
   }
@@ -24,8 +35,11 @@
       width: auto!important;
       line-height: 25px;
       height: 100%;
+      text-align: center;
 
       li {
+        width: 35px !important;
+        height: 35px !important;
         padding: 0 !important;
       }
     }
@@ -41,21 +55,21 @@
       li {
         line-height: 25px;
         padding: 0 0 0 15px !important;
-        a{
-        font-size: 11px!important;
+
+        a {
+          font-size: 11px!important;
+        }
       }
-    }
     }
   }
 
   .bottommenu {
-    margin-top: 0!important;
-    margin-bottom: 0!important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 
     .logo {
       width: 27%!important;
       padding-left: 40px !important;
-
 
       img {
         max-width: 100px;
@@ -77,11 +91,10 @@
       width: 25%;
       font-size: 11px;
       padding-right: 10px !important;
-      padding-top: 10px;
+      padding-top: 10px !important;
     }
 
     .login {
-
       width: 45%!important;
       font-size: 0.7em!important;
       text-align: right!important;
@@ -89,7 +102,77 @@
 
     .cart {
       width: 40%!important;
+    }
+  }
 
+  .page {
+    .slider {
+      height: 300px;
+
+      .display {
+        .slide {
+          .text {
+            width: 100%;
+            left: 0;
+
+            h2 {
+              padding-left: 50px;
+              padding-right: 50px;
+              font-size: 25px;
+            }
+
+            p {
+              font-size: 16px;
+              padding-left: 50px;
+              padding-right: 50px;
+            }
+          }
+        }
+      }
+
+      .controls {
+        .marks {
+          left: 0;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .section {
+    .tabs {
+      .list {
+        .tab {
+          .item {
+            .image {
+              height: 200px!important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section.anketa .descr {
+    width: 100px;
+  }
+
+  .section.anketa {
+    .getSkidka {
+      .forma {
+        margin: 0 !important;
+        width: 100%!important;
+        border-radius: 0px!important;
+
+        p {
+          width: 90%!important;
+        }
+
+        .send .submit {
+          width: 30%!important;
+        }
+      }
     }
   }
 }

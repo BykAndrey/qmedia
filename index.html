@@ -7,6 +7,7 @@
   <link rel="stylesheet/less" type="text/css" href="style_laptop.less">
   <link rel="stylesheet/less" type="text/css" href="style_tablet.less">
   <link rel="stylesheet/less" type="text/css" href="style_mobile.less">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 
 </head>
@@ -20,9 +21,9 @@
 
         <div class="left">
           <ul>
-            <li><a href="">Vk</a></li>
-            <li><a href="">Inst</a></li>
-            <li><a href="">F</a></li>
+            <li><a href=""><img src="vk.png" alt="" width="25px"></a></li>
+            <li><a href=""><img src="ins.png" alt=""  width="25px"></a></li>
+            <li><a href=""><img src="f.png" alt=""  width="25px"></a></li>
           </ul>
         </div>
         <div class="right">
@@ -44,7 +45,7 @@
       <div class="login"><a href="#">Вход</a> / <a href="#">Регистрация</a><br>
         <span>(Скидка 2% на всё)</span></div>
       <div class="cart">
-        <div class="logo">
+        <div class="ico">
           <img src="cart.png" width="50px">
         </div>
         <div class="info">
@@ -82,46 +83,396 @@
 
     <!--page-->
   <div class="page">
+    <!-- Slider-->
     <div class="slider">
       <div class="conteiner">
-      <div class="display">
-        <div class="slide">
-          <div class="image" style="background-image:url(images/4.jpg)"></div>
-          <div class="text">
-            <h2>Действительно низкие цены!</h2>
-            <p>Торопитесь купить любимые духи со скидкой до 50%</p>
+        <!--display-->
+        <div class="display">
+          <div class="slide">
+            <div class="image" style="background-image:url(images/1.jpg)"></div>
+            <div class="text">
+              <h2>Действительно низкие цены!</h2>
+              <p>Торопитесь купить любимые духи со скидкой до 10%</p>
+            </div>
           </div>
-        </div>  <div class="slide">
+          <div class="slide">
+            <div class="image" style="background-image:url(images/2.jpg)"></div>
+            <div class="text">
+              <h2>Действительно низкие цены!</h2>
+              <p>Торопитесь купить любимые духи со скидкой до 20%</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="image" style="background-image:url(images/3.jpg)"></div>
+            <div class="text">
+              <h2>Действительно низкие цены!</h2>
+              <p>Торопитесь купить любимые духи со скидкой до 30%</p>
+            </div>
+          </div>
+          <div class="slide">
             <div class="image" style="background-image:url(images/4.jpg)"></div>
             <div class="text">
               <h2>Действительно низкие цены!</h2>
-              <p>Торопитесь купить любимые духи со скидкой до 45%</p>
+              <p>Торопитесь купить любимые духи со скидкой до 40%</p>
             </div>
           </div>
-           <div class="slide">
-              <div class="image" style="background-image:url(images/4.jpg)"></div>
+        </div>
+        <!--End display-->
+
+        <!--Controls-->
+        <div class="controls">
+          <div class="marks">
+            <div class="mark" id='slide_0'></div>
+            <div class="mark" id='slide_1'></div>
+            <div class="mark" id='slide_2'></div>
+            <div class="mark" id='slide_3'></div>
+          </div>
+          <div class="buttons">
+            <div class="left"><img src="arrow.png" width="70px" height="70px"></div>
+            <div class="right"><img src="arrow.png" width="70px" height="70px"></div>
+          </div>
+        </div>
+        <!--/*End controls*/-->
+      </div>
+    </div>
+    <!--End Slider-->
+    <!--Tabs-->
+    <div class="section conteiner">
+      <div class="tabs">
+        <ul>
+          <li class="active"><label for="tab_skinka"><h2>Скидки</h2></label></li>
+          <li><label for="tab_new"><h2>Новинки</h2></label></li>
+          <li><label for="tab_popular"><h2>Популярное</h2></label></li>
+        </ul>
+        <div class="list">
+
+          <div id="tab_skinka" class="tab active">
+            <div class="item">
+              <div class="image" style="background-image:url(images/1.jpg)">
+                <div class="skidka">15%</div>
+              </div>
               <div class="text">
-                <h2>Действительно низкие цены!</h2>
-                <p>Торопитесь купить любимые духи со скидкой до 40%</p>
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
               </div>
             </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/1.jpg)">
+                <div class="skidka">15%</div>
+              </div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/1.jpg)">
+                <div class="skidka">15%</div>
+              </div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/1.jpg)">
+                <div class="skidka">15%</div>
+              </div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/1.jpg)">
+                <div class="skidka">15%</div>
+              </div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/1.jpg)">
+                <div class="skidka">15%</div>
+              </div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/1.jpg)">
+                <div class="skidka">15%</div>
+              </div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/1.jpg)">
+                <div class="skidka">15%</div>
+              </div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+          </div>
+          <div id="tab_new" class="tab">
+            <div class="item">
+              <div class="image" style="background-image:url(images/2.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/2.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/2.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/2.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/2.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/2.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/2.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/2.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+          </div>
+          <div id="tab_popular" class="tab">
+            <div class="item">
+              <div class="image" style="background-image:url(images/3.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/3.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/3.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/3.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/3.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/3.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/3.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="image" style="background-image:url(images/3.jpg)"></div>
+              <div class="text">
+                <h4>Agent Provocateur for women</h4>
+                <a href="#" class="category"> Туалетная вода</a>
+                <p class="value">50 мл</p>
+                <p class="cost"> <span>99 руб.</span> 79 руб.</p>
+                <div class="button"><a href="#">Купить</a></div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
       </div>
 
-
-
-      <div class="controls">
-        <div class="marks">
-          <div class="mark" id='slide_0'>0</div>
-          <div class="mark" id='slide_1'>1</div>
-          <div class="mark" id='slide_2'>2</div>
-        </div>
-        <div class="buttons">
-          <div class="left">left</div>
-          <div class="right">right</div>
-        </div>
-      </div>
-</div>
     </div>
+    <!--end tabs-->
+
+    <!--Anketa-->
+    <div class="section anketa">
+      <div class="conteiner">
+        <div class="cycle">
+          <div class="text">
+            <p>Хотите скидку?</p>
+          </div>
+        </div>
+        <div class="descr">Заполните анкету и получите скидку 25% на все духи в каталоге!</div>
+        <div class="button">Получить скидку</div>
+      </div>
+      <div class="getSkidka">
+        <div class="forma">
+          <div class="exit"><img src="krest.png" width="30px" alt=""></div>
+          <h3>Заполните анкету, и мы вышлем вам промокод на скидку!</h3>
+          <form action="" method="post">
+            <p> <label for="name"> Ваше имя:</label><br>
+              <input type="text" id="name" placeholder="Иван Иванов"></p>
+            <p> <label for="name"> Контактный телефон:</label><br>
+              <input type="text" id="phone" placeholder="8(029) 888-888"></p>
+            <p> <label for="email"> Email:</label><br>
+              <input type="text" id="email" placeholder="a@gmail.com"></p>
+            <p> <label for="datepicker"> Дата рождения:</label><br>
+              <input type="text" id="datepicker" placeholder="01/01/1990"></p>
+            <p class="allow">
+              <input type="checkbox" id="allow" name="allow" value="">
+              <label for="allow"> <i>Я согласен  получать новостную рассылк (2 раза в месяц мы будим высылать  вам информацыю  о новинках и акциях)</i></label>
+            </p>
+            <div class="send">
+              <p class="errors">Все поля должны быть заполнены</p>
+              <p class="submit"><input type="submit" value="Отправить" /></p>
+            </div>
+
+          </form>
+        </div>
+        <div class="danke">
+          <h4>Спасибо за подписку!</h4>
+          <div class="exit">Закрыть</div>
+        </div>
+      </div>
+    </div>
+    <!--End Anketa-->
+
+
+
+
+
 
 
   </div>
@@ -130,7 +481,63 @@
 
 
   <!--footer-->
-  <footer></footer>
+  <footer>
+    <div class="conteiner">
+      <div class="foottop">
+
+        <div class="infoblock">
+          <h4>О магазине</h4>
+          <div class="logo">
+            <img src="logo.svg" alt="Logo">
+          </div>
+          <b>parfumeria-test.by</b>
+          <p>Элитная порфюмерия в Минске по низким ценам</p>
+        </div>
+        <div class="infoblock">
+          <h4>Каталог</h4>
+          <ul>
+            <li><a href="#">Туалетная вода</a></li>
+            <li><a href="#">Парфюмированная вода</a></li>
+            <li><a href="#">Одеколон</a></li>
+            <li><a href="#">Духи</a></li>
+            <li><a href="#">Дезодарант</a></li>
+            <li><a href="#">Наборы</a></li>
+            <li><a href="#">Косметика</a></li>
+            <li><a href="#">Бренды</a></li>
+          </ul>
+        </div>
+        <div class="infoblock">
+          <h4>Покупателям</h4>
+          <ul>
+            <li><a href="#">Как заказать</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Возврат товара</a></li>
+            <li><a href="#">Публичная оферта</a></li>
+
+          </ul>
+        </div>
+        <div class="infoblock">
+          <h4>Контакты</h4>
+          <div class="phone"><span>+35 (29)</span> 123 45 67</div>
+          <div class=""> info@parfumeria-test.by</div>
+          <div> <br>
+            <a href="#">  <img src="vk.png" alt="" width="40px"></a>
+            <a href="#">  <img src="ins.png" alt="" width="40px"></a>
+            <a href="#">  <img src="f.png" alt="" width="40px"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footbot">
+      <div class="conteiner">
+        <div class="left">ООО Парфюмерия УНП 1911111111 <br> Информация о регистрации в торговом реестве</div>
+        <div class="right"><a href="#">Разработано Qmedia</a></div>
+      </div>
+
+    </div>
+
+  </footer>
   <!--End footer-->
 
 
@@ -139,8 +546,9 @@
   <script type="text/javascript" src="less.js"></script>
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="js.js"></script>
-    <script type="text/javascript" src="slider.js"></script>
-
+  <script type="text/javascript" src="slider.js"></script>
+  <script type="text/javascript" src="ui/jquery-ui.js"></script>
+  <script type="text/javascript" src="maskinput.js"></script>
 
 
 </body>
